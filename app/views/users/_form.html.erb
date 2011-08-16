@@ -17,19 +17,25 @@
   <legend>Enter User Details</legend>
   
   <div>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.label :name %>:
+    <%= f.text_field :name, :size => 40 %>
   </div>
+  
   <div>
-    <%= f.label :hashed_password %><br />
-    <%= f.text_field :hashed_password %>
+    <%= f.label :password, 'Password' %>:
+    <%= f.password_field :password, :size => 40 %>
   </div>
+  
   <div>
-    <%= f.label :salt %><br />
-    <%= f.text_field :salt %>
+    <%= f.label :password_confirmation, 'Confirm' %>:
+    <%= f.password_field :password_confirmation, :size => 40 %>
   </div>
+  
   <div>
     <%= f.submit %>
   </div>
+  
   </fieldset>
 <% end %>
+
+</div>
